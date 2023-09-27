@@ -59,9 +59,10 @@
         </div>
     </div>
     <p>
-        <b>Cities row</b> break first as they are defined in class <b>.col-md-</b> which is for medium devices(screen 
-        width equal to or greater than 768px) and letters are defined in <b>.col-sm-</b> which is for small devices
-        (screen width equal to or greater than 576px). So when we reduce the size of the browser, plants row break first.
+        <b>Cities row</b> The breakpoints for medium devices (with a screen width of 768px or greater) 
+        are defined within the <b>.col-md-</b> class, while the letters are specified in the <b>.col-sm-</b> 
+        class, intended for small devices (with a screen width of 576px or greater). Consequently, when we reduce the browser size, 
+        the Cities row is the first to undergo a layout adjustment.
     </p>
     <div class="container">
         <h2>Responsive Images</h2>
@@ -70,10 +71,10 @@
             <img src="chicago.jpg" alt="Chicago" class="img-fluid" style="width: 400px; height: 400px;">
           </div>
           <div class="col-md-4">
-            <img src="houston.jpg" alt="Houston" class="img-fluid" style="width: 400px; height: 400px;">
+            <img src="Houston.jpg" alt="Houston" class="img-fluid" style="width: 400px; height: 400px;">
           </div>
           <div class="col-md-4">
-            <img src="edinburgh.jpg" alt="Edinburgh" class="img-fluid" style="width: 400px; height: 400px;">
+            <img src="Edinburgh.jpg" alt="Edinburgh" class="img-fluid" style="width: 400px; height: 400px;">
           </div>
         </div>
       </div>
@@ -190,7 +191,7 @@
     <h2>Form</h2>
     <form>
         <div class="form-group">
-            <label for="email" from="form-check-label">Email address</label>
+            <label  from="form-check-label">Email address</label>
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
@@ -204,8 +205,36 @@
             <input type="checkbox" class="form-check-input" id="newsletter">
             <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
         </div>
-
         <button type="submit" class="btn btn-primary">Submit</button>
+        <hr>
+        <h2>Bonus</h2>
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img src="chicago.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Chicago</h5>
+                    <p class="card-text">The Windy City is known for its stunning architecture and vibrant culture.</p>
+                    <a href="https://en.wikipedia.org/wiki/Chicago" class="btn btn-primary">Learn more about Chicago</a>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+                <img src="Houston.jpg" class="card-img-top" style="height: 177px;">
+                <div class="card-body">
+                    <h5 class="card-title">Houston</h5>
+                    <p class="card-text">Space City is famous for its space exploration history and diverse culture.</p>
+                    <a href="https://en.wikipedia.org/wiki/Houston" class="btn btn-primary">Learn more about Houston</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="Edinburgh.jpg" class="card-img-top" style="height: 177px;">
+                <div class="card-body">
+                    <h5 class="card-title">Edinburgh</h5>
+                    <p class="card-text">Scotland's capital city is known for its rich history and stunning landscapes.</p>
+                    <a href="https://en.wikipedia.org/wiki/Edinburgh" class="btn btn-primary" target="_blank">Learn more about Edinburgh</a>
+                </div>
+            </div>
+        </div>
     </form>
 </body>
 </html>
